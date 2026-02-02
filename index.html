@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+  <link rel="manifest" href="./icon/site.webmanifest">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raphael Barbosa's profile</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card name">
+      <h1 class="name text-center">Raphael Barbosa</h1>
+      <p class="subtitle text-center">Full-stack junior developer</p>
+      <img class="img-circle" src="./images/Raphael.jpg">
+    </div>
+    <div class="card">
+      <h2 class="section-title text-center">About me</h2>
+      <p class="text-center">Former Big 4 tax consultant (10 years), now transitioning into full-stack web development with a focus on JavaScript.
+        Currently enrolled in Le Wagon Tokyo’s web development bootcamp (Ruby on Rails and SQL), building a strong foundation in backend and web application development.
+        Personal projects include a Node.js–based marketplace scraping tool.
+        Fluent in English, business-level Japanese (JLPT N1), based in Japan.</p>
+      <button id="email-btn">Contact me</button>
+      </div>
+      <div class="card">
+        <h2 class="section-title text-center">My socials</h2>
+        <ul>
+          <li><a href="https://github.com/sp1aca9fa" target="_blank"><i class="fa-brands fa-github list-icon"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/raphael-barbosa-7bb88695/" target="_blank"><i class="fa-brands fa-linkedin list-icon"></i></a></li>
+        </ul>
+      </div>
+    </div>
+</body>
+  <script>
+    const user = "sp1aca9fa";
+    const domain = "gmail.com";
+    document.getElementById("email-btn").onclick = () => {
+      window.location.href = `mailto:${user}@${domain}`;
+    };
+  </script>
+</html>
