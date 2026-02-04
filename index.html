@@ -13,33 +13,28 @@
 </head>
 <body>
   <div class="container">
+    <button id="change-btn" class="btn-purple">Change!</button>
     <div class="card name">
-      <h1 class="name text-center">Raphael Barbosa</h1>
-      <p class="subtitle text-center">Full-stack junior developer</p>
+      <h1 class="name">Raphael Barbosa</h1>
+      <p class="subtitle">Full-stack junior developer</p>
       <img class="img-circle" src="./images/Raphael.jpg">
     </div>
     <div class="card">
-      <h2 class="section-title text-center">About me</h2>
-      <p class="text-center">Former Big 4 tax consultant (10 years), now transitioning into full-stack web development with a focus on JavaScript.
+      <h2 class="section-title">About me</h2>
+      <p class="card-text">Former Big 4 tax consultant (10 years), now transitioning into full-stack web development with a focus on JavaScript.
         Currently enrolled in Le Wagon Tokyo’s web development bootcamp (Ruby on Rails and SQL), building a strong foundation in backend and web application development.
         Personal projects include a Node.js–based marketplace scraping tool.
         Fluent in English, business-level Japanese (JLPT N1), based in Japan.</p>
-      <button id="email-btn">Contact me</button>
-      </div>
-      <div class="card">
-        <h2 class="section-title text-center">My socials</h2>
-        <ul>
-          <li><a href="https://github.com/sp1aca9fa" target="_blank"><i class="fa-brands fa-github list-icon"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/raphael-barbosa-7bb88695/" target="_blank"><i class="fa-brands fa-linkedin list-icon"></i></a></li>
-        </ul>
-      </div>
+      <button id="email-btn" class="btn-purple">Contact me 📨</button>
     </div>
+    <div id="last-card" class="card">
+      <h2 class="section-title">My socials</h2>
+      <ul class="list-inline">
+        <li><a href="https://github.com/sp1aca9fa" target="_blank"><i class="fa-brands fa-github list-icon"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/raphael-barbosa-7bb88695/" target="_blank"><i class="fa-brands fa-linkedin list-icon"></i></a></li>
+      </ul>
+    </div>
+  </div>
 </body>
-  <script>
-    const user = "sp1aca9fa";
-    const domain = "gmail.com";
-    document.getElementById("email-btn").onclick = () => {
-      window.location.href = `mailto:${user}@${domain}`;
-    };
-  </script>
+  <script src="./script.js"></script>
 </html>

@@ -1,30 +1,55 @@
+/* TODO: use google fonts and make the change button less calling and the call me more calling, split css components, flex box?, size in multiples of 8px */
+
+:root {
+  --bg-color: #01011c;
+  --card-color: hsl(274, 59%, 14%);
+  --text-color: #e5e7eb;
+  --muted-text-color: #9ca3af;
+  --accent-color: #a78bfa;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
+  font-size: 18px;
   /* System font stack */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   /* background-color: #0f172a; */
-  background-color: #26272b;
-  color: #e5e7eb;
+  background-color: var(--bg-color);
+  /* background-color: #0b0b0e; -> really like this one! */
+  color: var(--text-color);
   line-height: 1.6;
+  text-align: center;
 }
 
 .container {
-  margin: 0 auto;
+  width: 600px;
+  margin: 10px auto;
 }
 
 .name {
-  margin: 10px 0 0 0;
+  margin: 0;
 }
 
-
 .card {
-
-  background-color: #2d313b6a;
-  border-radius: 1%;
+  padding: 20px;
+  margin: 20px 0;
+  /* background-color: #0f172a; */
+  background-color: var(--card-color);
+  /* background-color: #250e37; -> not too bad, maybe good even */
+  border-radius: 5%;
   /* box-shadow: 0 10px 30px rgba(0, 0, 0, .1); */
+}
+
+.card.name {
+  /* margin: 20px 0; */
+  padding: 20px
+}
+
+.card-text {
+  text-align: justify;
 }
 
 .subtitle {
@@ -35,7 +60,8 @@ body {
 }
 
 .img-circle {
-  width: 100px;
+  margin: 20px 0 0 0;
+  width: 130px;
   border-radius: 50%;
 }
 
@@ -43,22 +69,90 @@ body {
   /* near-white */
   /* color: #f9fafb; */
   /* purples */
-  color: #a78bfa;
+  color: var(--accent-color);
   /* color: #8b5cf6; */
   /* color: #c4b5fd; */
+  margin: 0;
 }
 
+.btn-purple {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  /* margin-top: 24px; */
+  display: inline-block;
+  border: none;
+  cursor: pointer;
 
-
-.text-center {
-  text-align: center;
 }
 
-i {
-  color: #9ca3af;
-}
-
-i:hover {
-  color: #a78bfa;
+.btn-purple:hover {
+  color: var(--accent-color);
   transition: 1.5s;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+.list-inline {
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  margin: 0 12px 0 12px;
+}
+
+.list-icon {
+  font-size: 36px;
+  color: var(--muted-text-color);
+}
+
+.list-icon:hover {
+  color: var(--accent-color);
+  transition: 1.5s;
+}
+
+#last-card {
+  margin-bottom: 10px;
+}
+
+#change-btn {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#change-btn:hover {
+  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    #ff0080,
+    #ff8c00,
+    #40e0d0,
+    #8a2be2,
+    #ff0080
+  );
+  background-size: 300% 100%;
+  animation: rainbow-slide 2s linear infinite;
+}
+
+@keyframes rainbow-slide {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
 }
