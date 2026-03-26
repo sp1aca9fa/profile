@@ -1,4 +1,4 @@
-# profile
+# Profile
 
 A simple personal profile page built with HTML, CSS, and a touch of JavaScript.
 
@@ -46,8 +46,7 @@ cd profile
 npx serve
 ```
 
-Then open:
-http://localhost:3000
+Open in your browser: http://localhost:3000
 
 ## Learnings
 
