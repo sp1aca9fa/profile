@@ -1,4 +1,4 @@
-# Profile Page
+# profile
 
 A simple personal profile page built with HTML, CSS, and a touch of JavaScript.
 
@@ -41,13 +41,13 @@ The dynamic color feature was added as an experiment to extend the original proj
 ## Setup
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/sp1aca9fa/profile
 cd profile
-serve
+npx serve
 ```
 
 Then open:
-http://localhost:8000
+http://localhost:3000
 
 ## Learnings
 
