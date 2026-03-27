@@ -59,4 +59,4 @@ Open in your browser: http://localhost:3000
 
 ## Notes
 
-This project is a solution to a bootcamp coding challenge and represents an early-stage implementation of front-end fundamentals, extended with a small interactive feature for experimentation.
+This project is a solution to a Le Wagon bootcamp coding challenge and represents an early-stage implementation of front-end fundamentals, extended with a small interactive feature for experimentation.
